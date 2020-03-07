@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （ standardStart 常规开始  standardStop常规停止   standardFastStop常规快速停止 ）
+		executeRank     执行等级
+		url    配置具体执行动作的XML
+		id     动作编号
+		（注：等级越高优先级越大       （目前项目没特殊需求，暂不要去更改等级））
+																				（制作者 -朱祺）
+				  -->
+ 
+	<item id="standardStart"        url="ScrollListRunStartConfig"   executeRank="1"   />
+	<item id="standardStop" url="ScrollListRunReadyStopConfig" executeRank="3"/>
+	<item id="standardFastStop"     url="ScrollListRunFastStopConfig"   executeRank="2"  />
+	<item id="expect2Url"   url="" executeRank="3"/>
+	<item id="expect3Url"   url="" executeRank="3"/>
+	<item id="expect4Url"   url="" executeRank="3"/>
+	<item id="expect5Url"   url="ScrollListRunExpect5Config"  executeRank="3"/>
+	<item id="expect2_3Url" url="" executeRank="3"/>
+	<item id="expect2_4Url" url="" executeRank="3"/>
+	<item id="expect2_5Url" url="" executeRank="3"/>
+	<item id="expect3_4Url" url="" executeRank="3"/>
+	<item id="expect3_5Url" url="" executeRank="3"/>
+	<item id="expect4_5Url" url="" executeRank="3"/>
+	
+ 
+</data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

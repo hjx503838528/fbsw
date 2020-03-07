@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （0 - 9） 
+            grade == 0 默认在启动项目前加载 
+            grade == 1 - 99 进入队列静默加载
+            grade > 100     未触发时不加载   -->
+  <item id="1"   grade="0" loadType="default" assetGroup="" />
+  <item id="2"   grade="0" loadType="default" assetGroup="" />
+  <item id="11"  grade="1" loadType="silent"  assetGroup="" />
+  <item id="101" grade="5" loadType="circle"  assetGroup="" />
+</data>

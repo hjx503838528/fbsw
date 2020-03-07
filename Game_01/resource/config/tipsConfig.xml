@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （）  -->
+  <item id="10000000"  title="" value="The bonus of gamble has        reached the limit" btnNum="1"/>
+  <item id="10000001"  title="" value="   You do not have sufficient     funds for the bet" btnNum="1"/>
+  <item id="10000002"  title="" value="Network disconnection,please   refresh the page" btnNum="0"/>
+</data>

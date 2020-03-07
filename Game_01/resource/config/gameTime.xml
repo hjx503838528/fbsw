@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- 王艺霖：===> Time 单位 秒 支持小数点后2位 （比如 1.55）  -->
+  <item id="WIN1"   winAllLineTime="2"  winSingleLineTime="1" autoSpinWinAlllineTime="2" isAutoSpinDelay="3"/>
+  <item id="WIN2"   winAllLineTime="2"  winSingleLineTime="1" autoSpinWinAlllineTime="2" isAutoSpinDelay="3"/>
+  <item id="WIN3"   winAllLineTime="2"  winSingleLineTime="1" autoSpinWinAlllineTime="2" isAutoSpinDelay="3"/>
+  <item id="BIG/SUPER/MAGEWIN" winAllLineTime="2"  winSingleLineTime="1" autoSpinWinAlllineTime="2" isAutoSpinDelay="3"/>
+</data>

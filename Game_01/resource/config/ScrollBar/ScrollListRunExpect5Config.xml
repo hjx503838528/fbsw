@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （  runEndValue = 运动距离 (runEndValue = location  视为运动到指定目标位置
+				说明：  runEndValue = "location"(到指定位置) 
+						runEndValue = "location+7000"（到指定目标向下7000的位置） 
+						runEndValue = "location-500"（到 指定目标向上500的位置）； 
+              fast = false 或 true   false = 低速模式（清晰图）  true = 高速模式（模糊图）  
+              runtimer = 运动时长(单位毫秒  1秒 = 1000毫秒) ；
+              runType = 运动模式（几种模式 => linear, sineIn, sineOut, sineInOut,
+              backIn, backOut, backInOut, circIn, circOut, circInOut, bounceIn       quadIn   quartIn  等等  http://developer.egret.com/cn/example/egret2d/index.html#070-tween-ease）  
+			  不填写默认为 linear 且linear模式性能最高， 建议：如果运动时间较长或者循环尽量linear；
+              endID = 正常结束跳转到下一个 ID （注: 当ID = over 视为整个运动结束了）；
+              severEndID = 正常收到服务器数据跳转ID
+              stopEndID = 当点击停止时直接跳转的 ID
+			  
+			  State  包含 starState 跟 endState
+				说明： starState="RunFinish" 或 endState="RunFinish"  视为整列运动结束；
+					   starState="PhaseCompletion" 或 endState="starState" 视为跳入另张配置表 根据等级进行（根据目前实际项目，暂适用与等级1的配置表   见 ： ScrollBarConfig）
+			  Event 包含 startEvent 跟 endEvent (主要是外部接收用)
+			    说明： Event 为自拟定事件派发，  设计目的主要是为了在日后复杂表现的滚动时期，约定事件协议去通知 ====> 外部渲染器去展示各种动作等等;
+					   默认""不触发，  ""内可以是1个事件也可以是多个事件
+					   列：startEvent="我是事件1开始,我是事件2_1"  endState="我是单独事件3，我是事件1结束，我是单独事件7"
+			  其他混合运动模式（根据实际项目在新增   注：以下属性非必要属性）： 
+				offsetX 偏移缓动整列坐标
+				
+																									（制作者 -朱祺）
+              ）  -->
+
+  <!--(   通用部分    ）  -->	
+  <!--(   自动停止    ）  -->
+  <item id="10004" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10005"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="10005" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10006"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="10006" delay="0"  offsetX="0"   runEndValue="90"           fast="false"       runTimer="300"     runType="linear"      endID="200001"      stopEndID="100001"        starState="" endState=""      startEvent=""             endEvent=""/>
+  
+  <!--(   手动停止    ）  -->
+  <item id="100001" delay="0"  offsetX="0"   runEndValue="location-50"  fast="true"        runTimer="0"        runType="linear"      endID="100002"           stopEndID="100002"       starState="" endState=""    startEvent=""      endEvent=""/>
+  <item id="100002" delay="0"  offsetX="0"   runEndValue="50"          fast="false"        runTimer="100"     runType="linear"      endID="return1"           stopEndID="return1"    starState="" endState=""    startEvent=""      endEvent=""/>
+   
+  <!--(   手动回弹效果    ）  -->
+  <item id="return1" delay="0"  offsetX="0"   runEndValue="8"          fast="false"        runTimer="25"     runType="linear"      endID="return2"           stopEndID="return2"    starState="" endState=""    startEvent=""      endEvent=""/>
+  <item id="return2" delay="0"  offsetX="0"   runEndValue="-13"          fast="false"      runTimer="50"     runType="linear"      endID="return3"           stopEndID="return3"    starState="" endState=""    startEvent=""      endEvent=""/>   
+  <item id="return3" delay="0"  offsetX="0"   runEndValue="5"       fast="false"           runTimer="25"     runType="linear"     endID=""     stopEndID=""      starState="" endState="RunFinish"    startEvent=""      endEvent=""/>
+  
+  <!--(   自动停止    ）  -->
+  <item id="200001" delay="0"  offsetX="0"   runEndValue="location-70"  fast="true"        runTimer=""        runType="linear"      endID="200002"           stopEndID="200002"       starState="" endState=""    startEvent=""      endEvent=""/>
+  <item id="200002" delay="0"  offsetX="0"   runEndValue="40"          fast="false"        runTimer="100"     runType="linear"      endID="200003"           stopEndID="200003"    starState="" endState=""    startEvent=""      endEvent=""/>
+  <item id="200003" delay="0"  offsetX="0"   runEndValue="30"  		fast="true"        runTimer="100"        runType="linear"      endID="auto_return1"           stopEndID="auto_return1"       starState="" endState=""    startEvent=""      endEvent=""/>
+ 
+  <!--(   自动回弹效果    ）  -->
+  <item id="auto_return1" delay="0"  offsetX="0"   runEndValue="8"          fast="false"        runTimer="30"     runType="linear"      endID="auto_return2"           stopEndID="auto_return2"    starState="" endState=""    startEvent=""      endEvent=""/>
+  <item id="auto_return2" delay="0"  offsetX="0"   runEndValue="-13"          fast="false"      runTimer="60"     runType="linear"      endID="auto_return3"           stopEndID="auto_return3"    starState="" endState=""    startEvent=""      endEvent=""/>   
+  <item id="auto_return3" delay="0"  offsetX="0"   runEndValue="5"       fast="false"           runTimer="30"     runType="linear"     endID=""     stopEndID=""      starState="" endState="RunFinish"    startEvent=""      endEvent=""/>
+  		  
+
+  <!--(   第一列    ）  -->		      
+  <item id="1001" delay="0"  offsetX="0"   runEndValue="-0"         fast="true"        runTimer=""        runType="linear"      endID="1002"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="1002" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="1003"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="1003" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10004"     stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  
+  <!--(   第二列    ）  -->
+  <item id="2001" delay="0"  offsetX="0"   runEndValue="-0"         fast="true"        runTimer=""        runType="linear"      endID="2002"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="2002" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="2003"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="2003" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="2004"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="2004" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="2005"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="2005" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="2006"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="2006" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10004"     stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  
+  <!--(   第三列    ）  -->
+  <item id="3001" delay="0"  offsetX="0"   runEndValue="-0"         fast="true"        runTimer=""        runType="linear"      endID="3002"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="3002" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3003"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3003" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3004"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3004" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3005"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="3005" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3006"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3006" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3007"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3007" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3008"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3008" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="3009"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="3009" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10004"     stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  
+  <!--(   第四列    ）  -->
+  <item id="4001" delay="0"  offsetX="0"   runEndValue="-0"         fast="true"        runTimer=""        runType="linear"      endID="4002"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="4002" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4003"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4003" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4004"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4004" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4005"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="4005" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4006"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4006" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4007"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4007" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4008"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4008" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4009"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4009" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4010"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="4010" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4011"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4011" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="4012"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="4012" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10004"     stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  
+  <!--(   第五列    ）  -->
+  <item id="5001" delay="0"  offsetX="0"   runEndValue="-0"         fast="true"        runTimer=""        runType="linear"      endID="5002"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5002" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5003"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5003" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5004"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5004" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5005"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5005" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5006"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5006" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5007"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5007" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5008"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5008" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5009"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5009" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5010"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5010" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5011"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5011" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5012"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5012" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5013"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5013" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5014"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5014" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5015"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5015" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5016"     stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5016" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5017"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5017" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5018"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5018" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5019"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5019" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5020"      stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  <item id="5020" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5021"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5021" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="5022"      stopEndID="100001"      starState="" endState=""      startEvent=""             endEvent=""/>
+  <item id="5022" delay="0"  offsetX="0"   runEndValue="90"           fast="true"        runTimer="300"     runType="linear"      endID="10004"     stopEndID="100001"      starState="" endState=""   startEvent=""             endEvent=""/>
+  
+  
+  
+  </data>
+  
+
+
+
+
+
+
+
+
+
+

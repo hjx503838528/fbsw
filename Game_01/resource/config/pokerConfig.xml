@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （moveImage  滚轮运动时动画或图片 ，breathingAnimation 静止呼吸动画或图片 ， 
+              destroyAnimation  销毁动画或图片，  winAnimation 获胜时动画或图片 
+
+				GUI_A	金发	A
+				GUI_B	黑发	B
+				GUI_F	五筒	F
+				GUI_E	五万	E
+				GUI_D	八筒	D
+				GUI_C	八万	C
+				GUI_G	幺鸡	G
+				GUI_J	东	J
+				GUI_H	南	H
+				GUI_I	西	I
+				GUI_K	北	K
+
+			  ）  -->
+
+
+  <item id="A"  moveImage="A" darkImage="Ac"  moveVagueImage="As"   breathingAnimation= "A" destroyAnimation= "A" winAnimation="A-mc"/>
+  <item id="B"  moveImage="B" darkImage="Bc"  moveVagueImage="Bs"   breathingAnimation= "B" destroyAnimation= "B" winAnimation="B-mc"/>
+  <item id="C"  moveImage="C" darkImage="Cc"  moveVagueImage="Cs"   breathingAnimation= "C" destroyAnimation= "C" winAnimation="C-mc"/>
+  <item id="D"  moveImage="D" darkImage="Dc"  moveVagueImage="Ds"   breathingAnimation= "D" destroyAnimation= "D" winAnimation="D-mc"/>
+  <item id="E"  moveImage="E" darkImage="Ec"  moveVagueImage="Es"   breathingAnimation= "E" destroyAnimation= "E" winAnimation="E-mc"/>
+  <item id="F"  moveImage="F" darkImage="Fc"  moveVagueImage="Fs"   breathingAnimation= "F" destroyAnimation= "F" winAnimation="F-mc"/>
+  <item id="G"  moveImage="G" darkImage="Gc"  moveVagueImage="Gs"   breathingAnimation= "G" destroyAnimation= "G" winAnimation="G-mc"/>
+  <item id="H"  moveImage="H" darkImage="Hc"  moveVagueImage="Hs"   breathingAnimation= "H" destroyAnimation= "H" winAnimation="H-mc"/>
+  <item id="I"  moveImage="I" darkImage="Ic"  moveVagueImage="Is"  breathingAnimation= "I" destroyAnimation= "I" winAnimation="I-mc"/>
+  <item id="K"  moveImage="K" darkImage="Kc"  moveVagueImage="Ks"  breathingAnimation= "K" destroyAnimation= "K" winAnimation="K-mc"/>
+  <item id="J"  moveImage="J" darkImage="Jc"  moveVagueImage="Js"  breathingAnimation= "J" destroyAnimation= "J" winAnimation="J-mc"/>
+  <item id="SCATTER"  moveImage="SCATTER" darkImage="SCATTERc"  moveVagueImage="SCATTERs"  breathingAnimation= "SCATTER" destroyAnimation= "SCATTER" winAnimation="SCATTER-mc"/>  
+  <item id="WILD"  moveImage="WILD"  darkImage="WILDc" moveVagueImage="WILDs"  breathingAnimation= "WILD" destroyAnimation= "WILD" winAnimation="WILD-mc"/>
+</data>
+
+
+

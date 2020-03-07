@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data><!-- （）  -->
+  <item id="lines"  valueMin="1" valueMax="9"/>
+  <item id="coins"  valueMin="1" valueMax="5"/>
+  <item id="autoWin"  valueMin="0" valueMax="600"/>
+  <item id="autoLose"  valueMin="0" valueMax="600"/>
+  <item id="bet"    value="0.25"/>
+  <item id="autoSpin"    values="10,25,50,100,500,-1"/>
+</data>

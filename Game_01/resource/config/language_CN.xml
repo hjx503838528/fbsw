@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- kuang - tanchukuang -->
+  <string name="keacvrivjach1-n9_fs7a" mz="n9">未知错误，请刷新页面。</string>
+  <string name="keacvrivjach1-n1_jach" mz="n1">请检测你的网络连接，然后再进行尝试。</string>
+  <string name="keacvrivjach1-n7_fs7a" mz="n7">确定</string>
+  <string name="keacvrivjach1-n8_fs7a" mz="n8">你没有足够的资金进行下注。</string>
+  <!-- Loading - ProgressBarUI -->
+  <string name="6pia320si69j0-n11_6dz2" mz="n11">ROSHAN PRODUCT</string>
+  <!-- Main - ADVANCE -->
+  <string name="6c1cpkvob47h30-n4_tj4b" mz="n4">更多设置</string>
+  <!-- Main - AUTO-6 -->
+  <string name="6c1cpkvob47h2v-n5_tj4b" mz="text">∞</string>
+  <!-- Main - AUTOSPIN -->
+  <string name="6c1cpkvob47h3a-n4_tj4b" mz="n4">自动旋转</string>
+  <!-- Main - autoStopBtn -->
+  <string name="6c1cpkvonyg15b-n7_her1" mz="n7">停止</string>
+  <!-- Main - BrandCom -->
+  <string name="6c1cpkvoakai8-n3_akai" mz="text">Z</string>
+  <!-- Main - COINSVALUE -->
+  <string name="6c1cpkvob47h36-n5_p08y" mz="n5">COINS
+VALUE</string>
+  <!-- Main - confirm -->
+  <string name="6c1cpkvob47h2t-n7_tj4b" mz="n7">确认</string>
+  <!-- Main - HANDSYSTEM -->
+  <string name="6c1cpkvob47h33-n15_s1ol" mz="n15">右手</string>
+  <string name="6c1cpkvob47h33-n16_s1ol" mz="n16">左手</string>
+  <!-- Main - LINESVALUE -->
+  <string name="6c1cpkvob47h37-n5_p08y" mz="n5">LINES
+VALUE</string>
+  <!-- Main - Main -->
+  <string name="6c1cpkvob47h25-n106_uov6" mz="lv3TXT">WIN : 123123</string>
+  <string name="6c1cpkvob47h25-n82_s1ol" mz="n82">惯用手设置</string>
+  <string name="6c1cpkvob47h25-n92_s1ol" mz="n92">音效</string>
+  <string name="6c1cpkvob47h25-n94_s1ol" mz="n94">音乐</string>
+  <string name="6c1cpkvob47h25-n51_p08y" mz="autoSpinText">OFF
+OFF
+OFF</string>
+  <string name="6c1cpkvob47h25-n117_p29y" mz="n117">LINES   COINS</string>
+  <!-- Main - MainBtnUI -->
+  <string name="6c1cpkvoup7i4-n2_up7i" mz="btnSpin">SPIN</string>
+  <string name="6c1cpkvoup7i4-n3_up7i" mz="n3">AUTO</string>
+  <string name="6c1cpkvoup7i4-n4_up7i" mz="btnBetMax">BET MAX</string>
+  <string name="6c1cpkvoup7i4-n5_up7i" mz="n5">SET BET</string>
+  <string name="6c1cpkvoup7i4-n7_up7i" mz="n7">声音</string>
+  <string name="6c1cpkvoup7i4-n8_up7i" mz="n8">快进</string>
+  <string name="6c1cpkvoup7i4-n9_besn" mz="btnL_R">L --</string>
+  <string name="6c1cpkvoup7i4-n10_besn" mz="btnL_P">L ++</string>
+  <string name="6c1cpkvoup7i4-n11_besn" mz="btnB_R">B --</string>
+  <string name="6c1cpkvoup7i4-n12_besn" mz="btnB_P">B ++</string>
+  <string name="6c1cpkvoup7i4-n13_besn" mz="btnC_R">C --</string>
+  <string name="6c1cpkvoup7i4-n14_besn" mz="btnC_P">C ++</string>
+  <string name="6c1cpkvoup7i4-n24_iko9" mz="btnStop">Stop</string>
+  <!-- Main - MainUI -->
+  <string name="6c1cpkvoo5070-n33_p86d" mz="testSoundBtn1">声音1</string>
+  <string name="6c1cpkvoo5070-n34_p86d" mz="testSoundBtn2">声音2</string>
+  <!-- Main - maxbet2 -->
+  <string name="6c1cpkvob47h3t-n7_kukh" mz="n7">最大赌注</string>
+  <!-- Main - NAV -->
+  <string name="6c1cpkvob47h38-n7_p08y" mz="n7">余额  $</string>
+  <!-- Main - ON-OFF -->
+  <string name="6c1cpkvob47h32-n15_s1ol" mz="n15">OFF</string>
+  <string name="6c1cpkvob47h32-n16_s1ol" mz="n16">ON</string>
+  <!-- Main - PAYTABLE-PAGE -->
+  <string name="6c1cpkvob47h28-n8_s1ol" mz="n8">“百搭符号”可替代除“夺宝符号”外的所有符号。</string>
+  <string name="6c1cpkvob47h28-n9_s1ol" mz="n9">赔率表</string>
+  <string name="6c1cpkvob47h28-n10_s1ol" mz="n10">符号赔付率</string>
+  <string name="6c1cpkvob47h28-n13_s1ol" mz="n13">夺宝符号获胜奖金累加到所有中奖线奖金中。
+  
+夺宝符号获胜奖金，等于夺宝符号赔率乘以总赌注。</string>
+  <string name="6c1cpkvob47h28-n43_s1ol" mz="n43">赔率表</string>
+  <string name="6c1cpkvob47h28-n44_s1ol" mz="n44">符号赔付率</string>
+  <string name="6c1cpkvob47h28-n96_s1ol" mz="n96">赔率表</string>
+  <string name="6c1cpkvob47h28-n97_s1ol" mz="n97">获胜的赌注线</string>
+  <!-- Main - SETBET -->
+  <string name="6c1cpkvob47h3c-n4_tj4b" mz="n4">设置赌注</string>
+  <!-- Main - STOPEDLOSE -->
+  <string name="6c1cpkvob47h2s-n5_p08y" mz="n5">亏损停止</string>
+  <string name="6c1cpkvob47h2s-n7_p08y" mz="n7">X             赌注</string>
+  <!-- Main - STOPEDWIN -->
+  <string name="6c1cpkvob47h2q-n5_p08y" mz="n5">获胜停止</string>
+  <string name="6c1cpkvob47h2q-n7_p08y" mz="n7">X             赌注</string>
+</resources>
