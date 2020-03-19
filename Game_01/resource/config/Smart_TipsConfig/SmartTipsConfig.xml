@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<data><!-- （）  -->
-  <item id="1001"  value="bounusLimint"       btnNum="1"     btnOK="2"   btnCancel=""/>
-  <item id="1002"  value="insufficientFund"   btnNum="1"     btnOK="2"   btnCancel=""/>
-  <item id="1003"  value="refresh"            btnNum="1"     btnOK="1"   btnCancel=""/>
-  <item id="1004"  value="test"               btnNum="2"     btnOK="1"   btnCancel="2"/>
-</data>
